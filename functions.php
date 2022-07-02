@@ -365,32 +365,31 @@ $languages = icl_get_languages('skip_missing=0');
 add_shortcode( 'wpml_custom_lang', 'wpml_shortcode_lang' );
 
 
-add_image_size( 'home__1', 492, 280, true );
-add_image_size( 'facilitator__post', 561, 361, true );
-add_image_size( 'about', 537, 582, true );
+add_image_size( 'home__1',  1004, 560, true );
+add_image_size( 'facilitator__post', 1012, 722, true );
+add_image_size( 'about', 1074, 1164, true );
 
 
-add_image_size( 'how_to_change_1', 361, 279, true );
-add_image_size( 'how_to_change_2', 561, 272, true );
+add_image_size( 'how_to_change_1', 722, 558, true );
+add_image_size( 'how_to_change_2', 1122, 544, true );
 
-add_image_size( 'single__top', 1170, 366, true );
-add_image_size( 'single__last', 377, 254, true );
+add_image_size( 'single__top', 2340, 732, true );
+add_image_size( 'single__last', 754, 508, true );
 
-add_image_size( 'blog__top', 674, 366, true );
-add_image_size( 'blog__img', 377, 254, true );
+add_image_size( 'blog__top', 1348, 732, true );
+add_image_size( 'blog__img', 754, 508, true );
 
-add_image_size( 'feedback__1', 773, 412, true );
-add_image_size( 'feedback__2', 377, 412, true );
+add_image_size( 'feedback__1', 1546, 824, true );
+add_image_size( 'feedback__2', 754, 824, true );
 
-add_image_size( 'pbl_school_top', 1170, 412, true );
+add_image_size( 'pbl_school_top', 2340, 824, true );
 
-add_image_size( 'how_to_hange_top', 361, 279, true );
-add_image_size( 'how_to_hange_bottom', 575, 279, true );
+add_image_size( 'how_to_hange_top', 722, 558, true );
+add_image_size( 'how_to_hange_bottom', 1150, 558, true );
 
-add_image_size( 'facilitator', 575, 370, true );
+add_image_size( 'facilitator', 2340, 1140, true );
 
-add_image_size( 'non_profit_top', 1170, 467, true );
-
+add_image_size( 'non_profit_top', 2340, 936, true );
 
 
 
