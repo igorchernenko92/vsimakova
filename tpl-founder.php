@@ -40,7 +40,7 @@ get_header(); ?>
                 $link_title = $link['title'];
                 $link_target = $link['target'] ? $link['target'] : '_self'; ?>
                       
-               <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+               <a href="<?php echo esc_url( $link_url ); ?>">
                  
              <?php endif; ?>
 
@@ -50,8 +50,9 @@ get_header(); ?>
                           <?php if( !empty( $image ) ): ?>
                               <img src="<?php echo esc_url($image['url']); ?>"  alt="<?php echo esc_attr($image['alt']); ?>">
                           <?php endif; ?>   
-
+                          <?php if(0):  ?>  
                           <p class="info">The English Studio Language School</p>
+                          <?php endif; ?>  
                         </div>
                       </div>
                 

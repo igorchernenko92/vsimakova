@@ -393,12 +393,13 @@ add_image_size( 'non_profit_top', 2340, 936, true );
 
 
 
-add_image_size( 'images_1170_374', 1170, 374, true );
-add_image_size( '1mages_974_370', 974, 370, true );
 
-add_image_size( 'about_537_582', 537, 582, true );
+add_image_size( 'images_1170_374', 2340, 748, true );
+add_image_size( '1mages_974_370', 1948, 740, true );
 
-add_image_size( 'home', 475, 293, true );
+add_image_size( 'about_537_582', 1074, 1164, true );
+
+add_image_size( 'home', 940, 586, true );
 
 
 

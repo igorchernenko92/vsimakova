@@ -88,7 +88,7 @@ if( $images ): ?>
             <div class="box__images">
             
             <?php 
-$imagert = get_field('brand');
+$imagert = get_sub_field('brand');
 if( !empty( $imagert ) ): ?>
     <img class="brand" src="<?php echo esc_url($imagert['url']); ?>" alt="<?php echo esc_attr($imagert['alt']); ?>" />
 <?php endif; ?>  
@@ -131,23 +131,14 @@ if( !empty( $imagert ) ): ?>
                 
 
         <?php if( $link ): ?>
-
-            <a data-fancybox=""  href="<?php echo $link; ?>">
+           <?php echo $link; ?>
         <?php endif; ?>
 
-               
-                   <?php if( !empty( $imagesr ) ): ?>
-        <img class="images"  src="<?php echo esc_url($imagesr['url']); ?>"  alt="<?php echo esc_attr($imagesr['alt']); ?>">
-    <?php endif; ?>      
-    
-                  
-                  
-               <?php if( $link ): ?>     
-                  </a>
-        <?php endif; ?>
                
                 </div>
               </div>
+              
+              
           <?php endwhile; ?>
 
       <?php endif; ?>

@@ -51,7 +51,47 @@ get_header(); ?>
 $tmt = substr($rtitlett, 0, 85 );
 echo $tmt; ?></a>
                     <div class="post__">
-                      <p>I’ve just finished reading the book The Gifts of Imperfection by Brene Brown  and can’t stop thinking about the teachings in it, especially all of us living in such disconnecting and, at the same time, connecting times...</p>
+                     
+
+<?php // check if the flexible content field has rows of data
+if( have_rows('post_pages') ):
+     // loop through the rows of data
+    while ( have_rows('post_pages') ) : the_row(); ?>
+    
+    <?php if( get_row_layout() == 'section_1' ): ?>   
+                    
+                          <?php $rtitlettr = get_sub_field('content'); ?>
+               
+                        <?php $tmtr = substr($rtitlettr, 0, 200 ); ?>
+    
+                     
+                      <p><?php echo $tmtr .'...';  ?></p>
+    
+    <?php elseif( get_row_layout() == 'section_2' ): ?>   
+                    
+                          <?php $rtitlettr = get_sub_field('content'); ?>
+               
+                        <?php $tmtr = substr($rtitlettr, 0, 200 ); ?>
+    
+                     
+                      <p><?php echo $tmtr .'...';  ?></p>
+    
+    <?php elseif( get_row_layout() == 'section_3' ): ?>   
+                    
+                          <?php $rtitlettr = get_sub_field('content'); ?>
+               
+                        <?php $tmtr = substr($rtitlettr, 0, 200 ); ?>
+    
+                     
+                      <p><?php echo $tmtr .'...';  ?></p> 
+                      
+                      
+  
+          <?php endif; 
+          endwhile;
+      endif; ?>
+                      
+         
                     </div><a class="post__links" href="<?php echo get_the_permalink(); ?>">Read more</a>
                   </div>
                 </div>
